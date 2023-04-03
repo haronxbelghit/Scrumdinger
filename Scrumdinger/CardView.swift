@@ -23,7 +23,7 @@ struct CardView: View {
                     .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
                     .labelStyle(.trailingIcon)
             }
-        }
+        }.padding()
     }
 }
 
@@ -32,6 +32,6 @@ struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView(scrum: scrum)
             .background(scrum.theme.mainColor)
-            .previewLayout(.device)
+            .previewLayout(.fixed(width: 400, height: 50))
     }
 }
