@@ -23,7 +23,9 @@ struct CardView: View {
                     .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
                     .labelStyle(.trailingIcon)
             }
-        }.padding()
+        }
+        .background(scrum.theme.mainColor)
+        .padding()
     }
 }
 
